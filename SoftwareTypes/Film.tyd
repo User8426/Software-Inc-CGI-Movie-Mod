@@ -1,12 +1,12 @@
 SoftwareType
 	{
-	Name			"Software Name"
+	Name			"Film"
 	Category		Category1 ; Category2
 	Description		"Description"
 	Random			0.1
 	IdealPrice		50
 	OptimalDevTime		25
-	OSSupport		Computer
+	OSSupport		True
 	OneClient		False
 	InHouse			False
 	SubmarketNames		[ Market1; Market2; Market3 ]
@@ -39,6 +39,7 @@ SoftwareType
 			Name 		"System Feature"
 			Spec		System
 			Description	"Description"
+			Dependencies	"Film Maker"    
 			DevTime		3
 			CodeArt		1
 			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
