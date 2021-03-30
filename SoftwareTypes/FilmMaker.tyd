@@ -1,36 +1,36 @@
 SoftwareType
 	{
-	Name			"Software Name"
-	Category		Category1 ; Category2
-	Description		"Description"
-	Random			0.1
-	IdealPrice		50
-	OptimalDevTime		25
+	Name			"Film Maker"
+	Category		Basic ; Professional
+	Description		"Film makers are required for making CGI films."
+	Random			0
+	IdealPrice		80
+	OptimalDevTime		36
 	OSSupport		Computer
 	OneClient		False
-	InHouse			False
-	SubmarketNames		[ Market1; Market2; Market3 ]
+	InHouse			True
+	SubmarketNames		[ Usability; Speed; Reallife-Likeness ]
 	Categories
 		[
 			{
-			Name			"Category1"
-			Description		"Category description"
-			Popularity		0.5
-			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
-			Retention		24
+			Name			"Basic"
+			Description		"Popular, but doesnt keep many for long."
+			Popularity		0.6
+			Submarkets		[ 1; 3; 1 ]
+			Retention		12
 			TimeScale		1
-			Iterative		0.75
-			NameGenerator		testgen
+			Iterative		0.9
+			NameGenerator		FilmMakingToolNames
 			}
                         {
-			Name			"Category2"
-			Description		"Category description"
-			Popularity		0.5
-			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
-			Retention		24
+			Name			"Professional"
+			Description		"Not as popular, but used for longer."
+			Popularity		0.4
+			Submarkets		[ 1; 3; 1 ]
+			Retention		32
 			TimeScale		1
-			Iterative		0.75
-			NameGenerator		testgen
+			Iterative		0.4
+			NameGenerator		FilmMakingToolNames
 			}
 		]
 	Features
