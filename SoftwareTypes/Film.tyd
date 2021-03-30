@@ -1,1 +1,209 @@
-
+SoftwareType
+	{
+	Name			"Software Name"
+	Category		Category1 ; Category2
+	Description		"Description"
+	Random			0.1
+	IdealPrice		50
+	OptimalDevTime		25
+	OSSupport		Computer
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ Market1; Market2; Market3 ]
+	Categories
+		[
+			{
+			Name			"Category1"
+			Description		"Category description"
+			Popularity		0.5
+			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
+			Retention		24
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator		testgen
+			}
+                        {
+			Name			"Category2"
+			Description		"Category description"
+			Popularity		0.5
+			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
+			Retention		24
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator		testgen
+			}
+		]
+	Features
+		[
+			{
+			Name 		"System Feature"
+			Spec		System
+			Description	"Description"
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Features
+				[
+					{
+					Name		"System subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"System subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name 		"Audio Feature"
+			Spec		Audio
+			Dependencies	"Audio Tool"
+			Optional	True
+			Description	"Description"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+                        Features
+				[
+					{
+					Name		"Audio subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Audio subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+                        {
+			Name 		"2D Feature"
+			Spec		2D
+			Dependencies	"2D Editor"
+			Optional	True
+			Description	"Description"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+                        Features
+				[
+					{
+					Name		"2D subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"2D subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+                        {
+			Name 		"3D Feature"
+			Spec		3D
+			Dependencies	"3D Editor"
+			Optional	True
+			Description	"Description"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+                        Features
+				[
+					{
+					Name		"3D subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"3D subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+                        {
+			Name 		"Network Feature"
+			Spec		Network
+			Optional	True
+			Description	"Description"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+                        Features
+				[
+					{
+					Name		"Network subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Network subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+                        {
+      			Name 		"Hardware Feature"
+			Spec		Hardware
+			Optional	True
+			Description	"Description"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+                        Features
+				[
+					{
+					Name		"Hardware subfeat 1"
+					Description	"Description"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Hardware subfeat 2"
+					Description	"Description"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+		]
+	}
