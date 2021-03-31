@@ -3,7 +3,7 @@ SoftwareType
 	Name			"Film Maker"
 	Category		Basic ; Professional
 	Description		"Film makers are required for making CGI films."
-	Random			0
+	Random			0.3
 	IdealPrice		80
 	OptimalDevTime		36
 	OSSupport		Computer
@@ -36,116 +36,115 @@ SoftwareType
 	Features
 		[
 			{
-			Name 		"System Feature"
+			Name 		"Main System Aspect"
 			Spec		System
-			Description	"Description"
+			Description	"Contains basics for it to work."
 			DevTime		3
 			CodeArt		1
-			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Submarkets	[ 1; 1; 0 ]
 			Features
 				[
 					{
-					Name		"System subfeat 1"
-					Description	"Description"
+					Name		"Optimizations (System)"
+					Description	"Makes the software run better, by optimizing the system code."
 					DevTime		3
 					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"System subfeat 2"
-					Description	"Description"
+					Name		"Digital Signature"
+					Description	"Digitally signs the software, making it look more safe."
 					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 1 ]
 					}
 				]
 			}
 			{
-			Name 		"Audio Feature"
+			Name 		"Audio"
 			Spec		Audio
 			Dependencies	"Audio Tool"
 			Optional	True
-			Description	"Description"
+			Description	"Time to go from silent films, to noise."
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 0; 1 ]
                         Features
 				[
 					{
-					Name		"Audio subfeat 1"
-					Description	"Description"
+					Name		"Voices"
+					Description	"Have computer generated sound that sounds human."
 					DevTime		3
 					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 1 ]
 					}
 					{
-					Name		"Audio subfeat 2"
-					Description	"Description"
+					Name		"Music"
+					Description	"Ability to add music."
 					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}
                         {
-			Name 		"2D Feature"
+			Name 		"2D Art"
 			Spec		2D
 			Dependencies	"2D Editor"
-			Optional	True
-			Description	"Description"
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Description	"Provides some imagery, just no depth."
+			DevTime		6
+			CodeArt		0.5
+			Submarkets	[ 1; 1; 1 ]
                         Features
 				[
 					{
-					Name		"2D subfeat 1"
-					Description	"Description"
+					Name		"Layers"
+					Description	"Adds layers, making it look better."
 					DevTime		3
 					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 0 ]
 					}
 					{
-					Name		"2D subfeat 2"
-					Description	"Description"
+					Name		"Shadows"
+					Description	"Would be weird without them..."
 					DevTime		3
 					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					CodeArt		0.7
+					Submarkets	[ 1; 0; 1 ]
 					}
 				]
 			}
                         {
-			Name 		"3D Feature"
+			Name 		"3D Art"
 			Spec		3D
 			Dependencies	"3D Editor"
 			Optional	True
-			Description	"Description"
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Description	"We finally have depth!"
+			DevTime		8
+			CodeArt		0.5
+			Submarkets	[ 1; 0; 4 ]
                         Features
 				[
 					{
-					Name		"3D subfeat 1"
-					Description	"Description"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name		"RTX"
+					Description	"People love ray tracing."
+					DevTime		6
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 9 ]
 					}
 					{
-					Name		"3D subfeat 2"
-					Description	"Description"
+					Name		"Ability to mix 2D and 3D"
+					Description	"So is this 2D, 3D, 4D or 5D. I'm confused."
 					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 1; 0 ]
 					}
 				]
 			}
@@ -153,10 +152,10 @@ SoftwareType
 			Name 		"Network Feature"
 			Spec		Network
 			Optional	True
-			Description	"Description"
+			Description	"Because apparently films need internet to work."
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 0; 0 ]
                         Features
 				[
 					{
