@@ -1,15 +1,14 @@
 SoftwareType
 	{
 	Name			"Film"
-	Category		Category1 ; Category2
-	Description		"Description"
-	Random			0.1
+	Category		Action ; Comedy ; Drama ; Documentary ; Sci fi 
+	Description		"Time to make film, and action!"
+	Random			0.8
 	IdealPrice		50
-	OptimalDevTime		25
-	OSSupport		True
+	OptimalDevTime		18
 	OneClient		False
 	InHouse			False
-	SubmarketNames		[ Market1; Market2; Market3 ]
+	SubmarketNames		[ Detail; Realism; Length ]
 	Categories
 		[
 			{
