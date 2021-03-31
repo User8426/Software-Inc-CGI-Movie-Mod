@@ -1,7 +1,7 @@
 SoftwareType
 	{
 	Name			"Film"
-	Category		Action ; Comedy ; Drama ; Documentary ; Sci fi 
+	Category		Action ; Comedy ; Drama ; Documentary ; Sci_fi 
 	Description		"Time to make film, and action!"
 	Random			0.8
 	IdealPrice		50
@@ -52,7 +52,7 @@ SoftwareType
 			NameGenerator		DocumentaryGen
 			}
 			{
-			Name			"SciFi"
+			Name			"Sci_Fi"
 			Description		"This category is, out of this round."
 			Popularity		0.5
 			Submarkets		[ 2; 0; 1 ]
