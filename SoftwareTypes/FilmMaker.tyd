@@ -74,6 +74,14 @@ SoftwareType
                         Features
 				[
 					{
+					Name		"Optimizations (Audio)"
+					Description	"Makes the software run better, by optimizing the audio code."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
 					Name		"Voices"
 					Description	"Have computer generated sound that sounds human."
 					DevTime		3
@@ -101,6 +109,14 @@ SoftwareType
 			Submarkets	[ 1; 1; 1 ]
                         Features
 				[
+					{
+					Name		"Optimizations (2D)"
+					Description	"Makes the software run better, by optimizing the 2D code + art."
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 1; 0 ]
+					}
 					{
 					Name		"Layers"
 					Description	"Adds layers, making it look better."
@@ -131,6 +147,14 @@ SoftwareType
                         Features
 				[
 					{
+					Name		"Optimizations (3D)"
+					Description	"Makes the software run better, by optimizing the 3D code + art."
+					DevTime		4
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
 					Name		"RTX"
 					Description	"People love ray tracing."
 					DevTime		6
@@ -160,6 +184,14 @@ SoftwareType
                         Features
 				[
 					{
+					Name		"Optimizations (Network)"
+					Description	"Makes the software run better, by optimizing the network code."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
 					Name		"DRM"
 					Description	"Just incase anyone tries to be a pirate."
 					DevTime		5
@@ -183,27 +215,36 @@ SoftwareType
       			Name 		"Hardware"
 			Spec		Hardware
 			Optional	True
-			Description	"Allows hardware to be used."
+			Description	"Allows hardware to be used more effectively."
 			DevTime		6
 			CodeArt		1
 			Submarkets	[ 1; 1; 0 ]
                         Features
 				[
 					{
-					Name		"Hardware subfeat 1"
-					Description	"Description"
-					DevTime		3
-					Level		1
+					Name		"CPU Overclock"
+					Description	"Make processing the film faster."
+					DevTime		2
+					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"Hardware subfeat 2"
-					Description	"Description"
-					DevTime		3
+					Name		"GPU Overclock"
+					Description	"Make processing the film faster."
+					DevTime		2
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Cryptominer"
+					Description	"Mine some bitcoin, but this is illegal you know."
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay "/scripts/Cryptominer.txt"
 					}
 				]
 			}
