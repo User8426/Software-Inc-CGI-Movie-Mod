@@ -156,34 +156,37 @@ SoftwareType
 			DevTime		4
 			CodeArt		1
 			Submarkets	[ 1; 0; 0 ]
+			Server          0.0005
                         Features
 				[
 					{
-					Name		"Network subfeat 1"
-					Description	"Description"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
-					}
-					{
-					Name		"Network subfeat 2"
-					Description	"Description"
-					DevTime		3
+					Name		"DRM"
+					Description	"Just incase anyone tries to be a pirate."
+					DevTime		5
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
+					Server          0.001
+					}
+					{
+					Name		"Cloud Storage."
+					Description	"Incentives for the internet, because people dont have to walk a couple metres for a external storage device.."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					Server          0.005
 					}
 				]
 			}
                         {
-      			Name 		"Hardware Feature"
+      			Name 		"Hardware"
 			Spec		Hardware
 			Optional	True
-			Description	"Description"
-			DevTime		4
+			Description	"Allows hardware to be used."
+			DevTime		6
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 1; 0 ]
                         Features
 				[
 					{
