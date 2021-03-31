@@ -12,24 +12,54 @@ SoftwareType
 	Categories
 		[
 			{
-			Name			"Category1"
-			Description		"Category description"
+			Name			"Action"
+			Description		"We need some action, otherwise the customers will do it to us."
 			Popularity		0.5
-			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
-			Retention		24
+			Submarkets		[ 1; 3; 1 ]
+			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		testgen
+			NameGenerator		ActionGen
 			}
                         {
-			Name			"Category2"
-			Description		"Category description"
+			Name			"Comedy"
+			Description		"Surely you cant be serious? I am serious, and dont call me Shirley."
 			Popularity		0.5
-			Submarkets		[ 1; 3; 1 ]#20%, 60%, 20%
-			Retention		24
+			Submarkets		[ 1; 1; 1 ]
+			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		testgen
+			NameGenerator		ComedyGen
+			}
+                        {
+	 		Name			"Drama"
+			Description		"[Insert suspensful music]"
+			Popularity		0.5
+			Submarkets		[ 1; 2; 2 ]
+			Retention		8
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator		DramaGen
+			}
+                        {
+			Name			"Documentary"
+			Description		"Or just read a biography."
+			Popularity		0.5
+			Submarkets		[ 1; 1; 1 ]
+			Retention		8
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator		DocumentaryGen
+			}
+			{
+			Name			"SciFi"
+			Description		"This category is, out of this round."
+			Popularity		0.5
+			Submarkets		[ 2; 0; 1 ]
+			Retention		8
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator		SciFiGen
 			}
 		]
 	Features
