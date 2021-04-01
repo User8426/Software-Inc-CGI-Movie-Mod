@@ -53,7 +53,7 @@ SoftwareType
 			}
 			{
 			Name			"Sci_Fi"
-			Description		"This category is, out of this round."
+			Description		"This category is, out of this time."
 			Popularity		0.5
 			Submarkets		[ 2; 0; 1 ]
 			Retention		8
@@ -65,71 +65,71 @@ SoftwareType
 	Features
 		[
 			{
-			Name 		"System Feature"
+			Name 		"The system basics of the film."
 			Spec		System
-			Description	"Description"
+			Description	"Story and some other bits."
 			Dependencies	"Film Maker"    
 			DevTime		3
 			CodeArt		1
-			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"System subfeat 1"
-					Description	"Description"
+					Name		"Plot Twists"
+					Description	"Twist that plot so it goes on for longer."
 					DevTime		3
 					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 1 ]
 					}
 					{
-					Name		"System subfeat 2"
-					Description	"Description"
+					Name		"Really really long button presses"
+					Description	"For a bit of realism with certain buttons."
 					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 0; 1; 1 ]
 					}
 				]
 			}
 			{
-			Name 		"Audio Feature"
+			Name 		"Sound"
 			Spec		Audio
 			Dependencies	"Audio Tool"
 			Optional	True
-			Description	"Description"
+			Description	"What, I cant hear you."
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 0; 1; 0 ]
                         Features
 				[
 					{
-					Name		"Audio subfeat 1"
-					Description	"Description"
+					Name		"Voices"
+					Description	"So people can talk"
 					DevTime		3
 					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 1; 0 ]
 					}
 					{
-					Name		"Audio subfeat 2"
-					Description	"Description"
+					Name		"Music"
+					Description	"Add background music for some scenes."
 					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}
                         {
-			Name 		"2D Feature"
+			Name 		"2D Imagery"
 			Spec		2D
 			Dependencies	"2D Editor"
 			Optional	True
-			Description	"Description"
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Description	"So people have something to see, even if depth isnt included."
+			DevTime		6
+			CodeArt		0.5
+			Submarkets	[ 0; 1; 3 ]#Detail; Realism; Length
                         Features
 				[
 					{
