@@ -19,7 +19,7 @@ SoftwareType
 			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		ActionGen
+			NameGenerator		FilmNames
 			}
                         {
 			Name			"Comedy"
@@ -29,7 +29,7 @@ SoftwareType
 			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		ComedyGen
+			NameGenerator		FilmNames
 			}
                         {
 	 		Name			"Drama"
@@ -39,7 +39,7 @@ SoftwareType
 			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		DramaGen
+			NameGenerator		FilmNames
 			}
                         {
 			Name			"Documentary"
@@ -49,7 +49,7 @@ SoftwareType
 			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		DocumentaryGen
+			NameGenerator		FilmNames
 			}
 			{
 			Name			"Sci_Fi"
@@ -59,7 +59,7 @@ SoftwareType
 			Retention		8
 			TimeScale		1
 			Iterative		0.75
-			NameGenerator		SciFiGen
+			NameGenerator		FilmNames
 			}
 		]
 	Features
