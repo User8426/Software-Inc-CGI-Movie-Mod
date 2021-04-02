@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Film Making tools"
+	PerYear			0.2
+	Min			2
+	Max			4
+	Types
+		[
+			{
+			Software	"Film Maker"
+			Chance		1
+			}
+		]
+	}

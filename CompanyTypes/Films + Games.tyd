@@ -1,0 +1,18 @@
+CompanyType
+	{
+	Specialization		"Films with Games"
+	PerYear			0.2
+	Min			1
+	Max			3
+	Types
+		[
+			{
+			Software	"Film"
+			Chance		1
+			}
+			{
+			Software	"Game"
+			Chance		1
+			}
+		]
+	}
