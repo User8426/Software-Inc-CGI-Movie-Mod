@@ -125,57 +125,56 @@ SoftwareType
 			Name 		"2D Imagery"
 			Spec		2D
 			Dependencies	"2D Editor"
-			Optional	True
 			Description	"So people have something to see, even if depth isnt included."
 			DevTime		6
 			CodeArt		0.5
-			Submarkets	[ 0; 1; 3 ]#Detail; Realism; Length
+			Submarkets	[ 0; 1; 3 ]
                         Features
 				[
 					{
-					Name		"2D subfeat 1"
-					Description	"Description"
+					Name		"Layers"
+					Description	"Adds layers, making it look better."
 					DevTime		3
 					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 0 ]
 					}
 					{
-					Name		"2D subfeat 2"
-					Description	"Description"
+					Name		"Shadows"
+					Description	"Would be weird without them..."
 					DevTime		3
 					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					CodeArt		0.7
+					Submarkets	[ 1; 1; 0 ]
 					}
 				]
 			}
                         {
-			Name 		"3D Feature"
+			Name 		"3D Depth"
 			Spec		3D
 			Dependencies	"3D Editor"
 			Optional	True
-			Description	"Description"
+			Description	"Adds depth to the imagery"
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 4; 0 ]
                         Features
 				[
 					{
-					Name		"3D subfeat 1"
-					Description	"Description"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name		"RTX"
+					Description	"People love ray tracing."
+					DevTime		6
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 9 ]
 					}
 					{
-					Name		"3D subfeat 2"
-					Description	"Description"
+					Name		"Ability to mix 2D and 3D"
+					Description	"So is this 2D, 3D, 4D or 5D. I'm confused."
 					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 1; 0 ]
 					}
 				]
 			}
@@ -183,27 +182,38 @@ SoftwareType
 			Name 		"Network Feature"
 			Spec		Network
 			Optional	True
-			Description	"Description"
+			Description	"For downloading the film, downloadble extra content etc"
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 0; 1; 3 ]#Detail; Realism; Length
                         Features
 				[
 					{
-					Name		"Network subfeat 1"
-					Description	"Description"
-					DevTime		3
+					Name		"Download the film from anywhere"
+					Description	"Incase the film is lost."
+					DevTime		4
 					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 1; 0; 0 ]
+					Server          0.001
 					}
 					{
-					Name		"Network subfeat 2"
-					Description	"Description"
-					DevTime		3
+					Name		"Behind the scenes future thats downloadable"
+					Description	"Why not eh?"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					Server          0.001
+					}	
+					{
+					Name		"DRM"
+					Description	"Just incase anyone tries to be a pirate."
+					DevTime		5
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
+					Server          0.001
 					}
 				]
 			}
@@ -212,26 +222,19 @@ SoftwareType
 			Spec		Hardware
 			Optional	True
 			Description	"Description"
-			DevTime		4
+			DevTime		1
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 0; 0 ]
                         Features
 				[
 					{
-					Name		"Hardware subfeat 1"
-					Description	"Description"
-					DevTime		3
-					Level		1
+					Name		"Cryptominer"
+					Description	"Mine some bitcoin, but this is illegal you know."
+					DevTime		4
+					Level		3
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
-					}
-					{
-					Name		"Hardware subfeat 2"
-					Description	"Description"
-					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	0
+					Script_EndOfDay "/scripts/Cryptominer.txt"
 					}
 				]
 			}
